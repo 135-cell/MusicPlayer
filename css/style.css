@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Jost', sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(179, 176, 176);
+    display: grid;
+    place-items: center;
+}
+.musicContainer {
+    width: 35rem;
+    height: 55rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    text-align: center;
+}
+
+.musicContainer #title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 05.rem;
+    color: #171717;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+ .musicContainer #artist {
+    color: #cccaca;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.imgContainer {
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%; 
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.musicControls {
+    width: 27rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.musicControls .fas {
+    color: #000000;
+    font-size: 6rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+ 
+/* .musicControls .mainBtn {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: #f6f6f6;
+    display: flex;
+    justify-content: center; 
+    font-size: 1.4rem;
+}  */
+
+.musicControls .fas:hover {
+    color: rgb(110, 110, 110);
+}
+
+.musicControls .fa-play-circle:hover {
+    border-radius: 50%;
+    /* background-color: transparent; */
+    color: rgb(114, 114, 106);
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
+.anime {
+    animation: rotatePlayer 5s linear infinite;
+}
+
+@keyframes rotatePlayer {
+    from {
+         transform: rotate(0deg); 
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
